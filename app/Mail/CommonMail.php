@@ -28,7 +28,7 @@ class CommonMail extends Mailable
      */
     public function build()
     {
-        return $this->from('no-reply@pepeleads.com', 'PepeLeads Network')
+        return $this->from(config('constants.MAIL_FROM_ADDRESS'), 'PepeLeads Network')
                     ->subject($this->data['title'])
                     ->view('emails.common_template')
                     ->with([
