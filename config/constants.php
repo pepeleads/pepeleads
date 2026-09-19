@@ -6,12 +6,12 @@ $key=[
     'DB_PORT'=>'3306',
   
     'MAIL_MAILER'=>'smtp',
-    'MAIL_HOST'=>'pepeleads.com',
-    'MAIL_PORT'=>'465',
-    'MAIL_USERNAME'=>'no-reply@pepeleads.com',
-    'MAIL_PASSWORD'=>'a!]KMZ&QE1P2',
-    'MAIL_ENCRYPTION'=>'ssl',
-    'MAIL_FROM_ADDRESS'=>'no-reply@pepeleads.com',
+    'MAIL_HOST'=>'smtp.gmail.com',
+    'MAIL_PORT'=>'587',
+    'MAIL_USERNAME'=>'business@moustacheleads.com',
+    'MAIL_PASSWORD'=>env('MAIL_PASSWORD'),
+    'MAIL_ENCRYPTION'=>'tls',
+    'MAIL_FROM_ADDRESS'=>'business@moustacheleads.com',
     'MAIL_FROM_NAME'=>'PepeLeads',
 ];
 

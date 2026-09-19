@@ -28,7 +28,7 @@ class AccountVerified extends Mailable
      */
     public function build()
     {
-        return $this->from('no-reply@pepeleads.com', 'PepeLeads Network')
+        return $this->from(config('constants.MAIL_FROM_ADDRESS'), 'PepeLeads Network')
                     ->subject('Thank you for registering on PepeLeads Network')
                     ->view('emails.account_verified')
                     ->with([
